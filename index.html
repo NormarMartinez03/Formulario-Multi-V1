@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html  lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style\css\style.css">
+</head>
+<body>
+  <form id="myForm">
+    <fieldset id="page1">
+      <legend>Datos Personales</legend>
+      <label for="name">Nombre:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="lastName">Apellido</label><br>
+      <input type="text" id="lastName" name="lastName"><br>
+      <label for="age">Edad:</label><br>
+      <input type="number" id="age" name="age"><br>
+
+      <button type="button" onclick="nextPage()">Siguiente</button>
+    </fieldset>
+    <fieldset id="page2">
+      <legend>Familiares</legend>
+      <label for="relativeName">Nombre del familiar:</label><br>
+      <input type="text" id="relativeName" name="relativeName"><br>
+      <label for="relationship">Parentesco:</label><br>
+      <input type="text" id="relationship" name="relationship"><br>
+      <label for="relativeAge">Edad del familiar:</label><br>
+      <input type="number" id="relativeAge" name="relativeAge"><br>
+      <button type="button" onclick="addRelative()">Agregar familiar</button>
+      <button type="button" onclick="nextPage()">Siguiente</button>
+    </fieldset>
+    <fieldset id="page3">
+      <legend>Condiciones Pre-Existentes de Salud</legend>
+      <label for="condition">Enfermedad:</label><br>
+      <input type="text" id="condition" name="condition"><br>
+      <label for="timeWithCondition">Tiempo con la enfermedad:</label><br>
+      <input type="text" id="timeWithCondition" name="timeWithCondition"><br>
+      <button type="button" onclick="addCondition()">Agregar condición</button>
+      <button type="button" onclick="nextPage()">Siguiente</button>
+    </fieldset>
+    <fieldset id="page4">
+      <legend>Internamientos Realizados</legend>
+      <label for="date">Fecha:</label><br>
+      <input type="date" id="date" name="date"><br>
+      <label for="medicalCenter">Centro Médico:</label><br>
+      <input type="text" id="medicalCenter" name="medicalCenter"><br>
+      <label for="diagnosis">Diagnóstico:</label><br>
+      <input type="text" id="diagnosis" name="diagnosis"><br>
+      <button type="button" onclick="addInternment()">Agregar internamiento</button>
+      <button type="button" onclick="nextPage()">Siguiente</button>
+    </fieldset>
+    <fieldset id="page5">
+      <legend>Resumen de los Datos</legend>
+      <div id="summary"></div>
+      <button type="button" onclick="showData()">Mostrar datos</button>
+    </fieldset>
+  </form>
+  <script src="javascript\data.js"></script>
+</body>
+</html>
+</body>
+</html>

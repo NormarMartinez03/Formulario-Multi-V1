@@ -1,0 +1,37 @@
+{
+    "persona":{
+    "Datos personales": {
+        "Nombre ": "",
+        "Apellido": "",
+        "Edad": "",
+        "Teléfono": "", 
+        "Dirección":"",
+        "correo electronico":""
+        },
+        "Familiares":[
+            {
+            "Nombre ": "",
+            "Parentesco": "",
+            "edad": "",
+            "Teléfono": "", 
+            "Dirección":""
+        }
+    ],
+    "condicionesPreexistentes":[
+        {
+            "Enfermedad": "",
+            "Descripción de la condición preexistente": "",
+            "TiempoConEnfermedad": "",
+            "TratamientoActual": ""
+        }
+    ],
+    "Internamiemtos":[
+        {
+            "Fecha": "",
+            "Centro Medico": "",
+            "Diagnostico": ""
+            
+        }
+    ]
+    }
+}
